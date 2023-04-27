@@ -17,7 +17,7 @@ function calculaIMC() {
         classificacao = " Meu caro, você vai ter um infarto... Vá levantar um ferro e correr!!";
     }
 
-    if(peso == 0 || altura == 0){
+    if(peso == null || altura == null){
         document.getElementById("resp").innerText = "Os campos de peso e altura estão vazios, favor inserir os dados";
     } else{
         document.getElementById("resp").innerText = "O seu IMC é: " + resp + " a sua classificação é a seguinte:" + classificacao;
