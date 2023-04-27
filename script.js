@@ -2,8 +2,11 @@ console.log("teste do js");
 
 function calculaIMC() {
     let peso, altura, resp, classificacao;
-    peso = parseFloat( document.getElementById("edtPeso").value ) ; 
-    altura = parseFloat( document.getElementById("edtAltura").value ) ;
+
+        peso = parseFloat( document.getElementById("edtPeso").value ) ; 
+        altura = parseFloat( document.getElementById("edtAltura").value ) ;
+
+    
     
     resp = peso / (altura * altura) ;
 
@@ -17,10 +20,10 @@ function calculaIMC() {
         classificacao = " Meu caro, você vai ter um infarto... Vá levantar um ferro e correr!!";
     }
 
-    if(peso == null || altura == null){
-        document.getElementById("resp").innerText = "Os campos de peso e altura estão vazios, favor inserir os dados";
-    } else{
+    if(resp){
         document.getElementById("resp").innerText = "O seu IMC é: " + resp + " a sua classificação é a seguinte:" + classificacao;
+    } else{ 
+        document.getElementById("resp").innerText = "Os campos de peso e altura estão vazios, favor inserir os dados";
     }
     
 }
