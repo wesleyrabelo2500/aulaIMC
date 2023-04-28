@@ -14,7 +14,7 @@ function calculaIMC() {
     } else if (resp <= 29.9) {
         classificacao = " levemente acima do peso";
     } else {
-        classificacao = " programador, termine a tabela";
+        classificacao = " Meu caro, você vai ter um infarto... Vá levantar um ferro e correr!!";
     }
 
     document.getElementById("resp").innerText = "O seu IMC é: " + resp + " a sua classificação é a seguinte:" + classificacao;
