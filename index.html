@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercício IMC</title>
-    <link rel="stylesheet" href="./estilo.css">
+    <link rel="stylesheet" href="./estilo.css" />
     <script defer type="text/javascript" src="./script.js"></script>
-</head> 
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <h1>Cálculo do IMC</h1>
     <h2>Insira seu peso em KG e altura em Metros</h2>
     <div id="caixas">
-        <input type="number" id="edtPeso" placeholder="Peso">
-        <input type="number" id="edtAltura" placeholder="Altura">
+      <input type="number" id="edtPeso" placeholder="Peso" />
+      <input type="number" id="edtAltura" placeholder="Altura" />
     </div>
 
-    <button type="button" id="btnCalcula" onclick="calculaIMC()"> Calcular </button>
+    <button type="button" id="btnCalcula" onclick="calculaIMC()">
+      Calcular
+    </button>
 
-    <p id="resp">Resposta:  </p>
+    <p id="resp">Resposta:</p>
 
     <h2>TesteGitHub</h2>
-
-</body>
+  </body>
 </html>
